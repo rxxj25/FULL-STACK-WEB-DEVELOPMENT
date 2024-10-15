@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+   
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+    />
+  </head>
+  <body>
+    <div id="home" class="desktop-1">
+      <section class="desktop-1-inner">
+        <div class="frame-parent">
+          <div class="frame-wrapper">
+            <div class="services-list-parent">
+              <div class="services-list">
+                
+                <b class="lock-buddy">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path fill="currentColor" d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m10 7.5V9a2 2 0 0 0-2-2H9v10h4a2 2 0 0 0 2-2v-1.5c0-.8-.7-1.5-1.5-1.5c.8 0 1.5-.7 1.5-1.5M13 15h-2v-2h2zm0-4h-2V9h2z"/>
+                  </svg>LOCK BUDDY</b>
+              </div>
+              <div class="community-info-parent">
+                <div class="community-info">
+                  <div class="home-label">
+                    <div class="about-us-label">
+                      <div class="home-parent">
+                        <a class="about-us" href="#home">HOME</a>
+                        <a class="about-us" href="#about">ABOUT US</a>
+                        <a class="services" href="#services">SERVICES</a>
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle" type="button" id="signInDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                           <a class="about-us"> SIGN IN</a>
+                          </button>
+                          <div class="dropdown-content">
+                            <a href="userlogin.html">USER</a>
+                            <a href="commissionerlogin.html">ADMIN</a>
+                            
+                          </div>
+                        </div> 
+                      </div>
+                    </div>
+                    <b class="empowering-communities-one"
+                      >"Empowering Communities, One Solution at a Time."</b
+                    >
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="button-instance">
+            <div class="frame-group">
+              <div class="button-rect-xsmall-web-only-te-wrapper">
+                <button class="button-rect-xsmall-web-only-te">
+                  <div class="signed-by-base-button-rect"></div>
+                  <div class="content">
+                    
+
+                    <div class="label"><a href="registration.html" style="color: antiquewhite;">Get Started</a></div>
+                    <img
+                      class="arrow-right-icon"
+                      alt=""
+                      src="./public/arrow-right.svg"
+                    />
+                  </div>
+                  <div class="minimum-width-xsmall"></div>
+                </button>
+              </div>
+              <b id="about" class="about-us1">ABOUT US</b>
+            </div>
+          </div>
+          <div class="repair-service-label">
+            <div class="welcome-to-block-buddy-the-go-wrapper">
+              <div class="welcome-to-block-container">
+                <p class="welcome-to-block">
+                  Welcome to BLOCK BUDDY, the go-to platform for neighborhood
+                  problem-solving. Dedicated to fostering collaboration and
+                  community engagement, we provide a
+                </p>
+                <p class="central-hub-where">
+                  central hub where residents can voice concerns, share
+                </p>
+                <p class="ideas-and-work">
+                  ideas, and work together towards practical solutions.
+                </p>
+                <p class="with-a-focus">
+                  With a focus on empowering neighborhoods to address
+                </p>
+                <p class="their-unique-challenges">
+                  their unique challenges, our mission is to create stronger,
+                </p>
+                <p class="more-resilient-communities">
+                  more resilient communities where everyone has a voice
+                </p>
+                <p class="and-the-opportunity">
+                  and the opportunity to make a difference. Join us today
+                </p>
+                <p class="and-be-part">and be part of the solution!</p>
+              </div>
+            </div>
+            <img
+              class="image-1-icon"
+              loading="lazy"
+              alt=""
+              src="{{ url_for('static', filename='1.jpg') }}" alt="Example Image"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="creator-label-parent">
+        <div class="creator-label">
+          <img
+            class="image-2-icon"
+            loading="lazy"
+            alt=""
+            src="{{ url_for('static',filename= '2.jpg') }}" alt="Example Image"
+          />
+
+          <div class="at-block-buddy-we-provide-a-c-wrapper">
+            <div class="at-block-buddy">
+              At BLOCK BUDDY, we provide a centralized hub where community
+              members can come together to voice their concerns, share ideas,
+              and work towards tangible solutions. Our platform offers a range
+              of tools and resources designed to facilitate communication,
+              organize initiatives, and connect individuals with like-minded
+              neighbors who share a passion for making a difference.
+            </div>
+          </div>
+        </div>
+        <div class="image-3-parent">
+          <img
+            class="image-3-icon"
+            loading="lazy"
+            alt=""
+            src="{{ url_for('static', filename='3.webp') }}" alt="Example Image"
+          />
+
+
+          <div class="our-mission-is-container">
+            <p class="our-mission-is">
+              Our mission is simple: to empower neighborhoods 
+              to address their problems effectively and build 
+              stronger, more resilientcommunities.
+            </p>
+            <p class="by-leveraging-the">
+              By leveraging the collective wisdom and expertise 
+              of our members,
+            </p>
+            <p class="we-aim-to">
+              we aim to create a supportive environment
+              where everyone has a
+            </p>
+            <p class="voice-and-the">
+              voice and the opportunity to contribute
+              to the betterment of the surroundings.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="desktop-1-child"></div>
+      <div id="services" class="our-services-wrapper">
+        <b  class="our-services">OUR SERVICES</b>
+      </div>
+      <section class="frame-container">
+        <div class="background-image-wrapper">
+          <div class="background-image">
+            <div class="team-member-label">
+              <div class="frame-div">
+                <div class="mask-group-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48"><defs><mask id="ipSOneKey0"><g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><rect width="36" height="36" x="6" y="6" fill="#fff" stroke="#fff" rx="3"/><path stroke="#000" d="M21.226 18L26 13.017V34"/></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSOneKey0)"/>
+                  </svg>
+                </div><div class="bill-calculator">BILL CALCULATOR</div>
+              </div>
+            </div>
+            <div class="three-key-label-parent">
+              <div class="three-key-label">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48"><defs><mask id="ipSTwoKey0"><g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><rect width="36" height="36" x="6" y="6" fill="#fff" stroke="#fff" rx="3"/><path stroke="#000" d="M19 19c0-3.167 2.667-5 5-5s5 1.833 5 5c0 5.7-10 9.933-10 15h10"/></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSTwoKey0)"/>
+                </svg>
+              </div>
+              <div class="syed-amaan-title">
+                <div class="bmic-title">
+                  
+                  <div class="accident-reporting">ACCIDENT REPORTING</div>
+                  <div class="icon-park-solidtwo-key"></div>
+                </div>
+                <div class="it-simplifies-splitting-expens-wrapper">
+                  <div class="it-simplifies-splitting">
+                    It simplifies splitting expenses among neighbors, ensuring
+                    fairness and transparency in shared financial arrangements
+                    within the community.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame-parent1">
+          <div class="repair-services-parent">
+            <div class="repair-services">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" width="3.1em" height="3.1em" viewBox="0 0 48 48"><defs><mask id="ipSThreeKey0"><g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><rect width="36" height="36" x="6" y="6" fill="#fff" stroke="#fff" rx="3"/><path stroke="#000" d="M19 14h10l-7 9c4 0 7 2 7 6s-3 5-5 5c-2.381 0-4-1-5-2.1"/></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSThreeKey0)"/>
+              </svg>
+            </div>
+            <div class="robbery-reporting-offers-a-str-parent">
+              <div class="robbery-reporting-offers">
+                Robbery Reporting offers a streamlined process for individuals
+                to report incidents of theft or robbery, aiding law enforcement
+                in investigations and promoting community safety.
+              </div>
+              <div class="theft-reporting">THEFT REPORTING</div>
+            </div>
+          </div>
+          <div class="frame-parent2">
+            <div class="frame-wrapper1">
+              <div class="mask-group-parent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48"><defs><mask id="ipSFourKey0"><g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><rect width="36" height="36" x="6" y="6" fill="#fff" stroke="#fff" rx="3"/><path stroke="#000" d="M26.977 34V14L18 26.997v2.023h12"/></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSFourKey0)"/>
+                </svg>
+
+              </div>
+            </div>
+            <div class="repair-and-maintenance">REPAIR AND MAINTENANCE</div>
+            <div class="the-repair-and-maintenance-ser-wrapper">
+              <div class="the-repair-and">
+                The Repair and Maintenance service provides efficient solutions
+                for addressing household or property-related issues, ensuring
+                timely repairs and upkeep for optimal functionality and safety.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="vector-parent">
+        <img class="frame-child" alt="" src="./public/rectangle-1.svg" />
+        
+
+        <div class="icon-park-solidone-key"></div>
+        <div class="it-simplifies-splitting1">
+          It simplifies splitting expenses among neighbors, ensuring fairness
+          and transparency in shared financial arrangements within the
+          community.
+        </div>
+      </div>
+      <section class="wallpaperflare-1-parent">
+        <img src="{{ url_for('static', filename='background.jpg') }}" alt="Example Image">
+      </section>
+      <div class="creator-wrapper">
+        <b class="creator">CREATOR </b>
+      </div>
+      <section class="frame-section">
+        <div class="frame-parent3">
+          <div class="team-members-wrapper">
+            <div class="team-members">
+              <div class="team-members-inner">
+                <div class="mask-group-group">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48"><defs><mask id="ipSOneKey0"><g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><rect width="36" height="36" x="6" y="6" fill="#fff" stroke="#fff" rx="3"/><path stroke="#000" d="M21.226 18L26 13.017V34"/></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSOneKey0)"/>
+                  </svg>
+                 
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48"><defs><mask id="ipSTwoKey0"><g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><rect width="36" height="36" x="6" y="6" fill="#fff" stroke="#fff" rx="3"/><path stroke="#000" d="M19 19c0-3.167 2.667-5 5-5s5 1.833 5 5c0 5.7-10 9.933-10 15h10"/></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSTwoKey0)"/>
+                </svg>
+              </div>
+              <div class="amritesh-srivastava">
+                <div class="amritesh-shrivastava-parent">
+                  <div class="amritesh-shrivastava">AMRITESH SHRIVASTAVA</div>
+                  <div class="bm22ic007-wrapper">
+                    <div class="bm22ic007">1BM22IC007</div>
+                  </div>
+                </div>
+                <div class="frame-parent4">
+                  <div class="vector-group">
+                    
+                    <img
+                      class="frame-item"
+                      alt=""
+                      src="./public/rectangle-2.svg"
+                    />
+
+                    <div class="abhishek-yadav">ABHISHEK YADAV</div>
+                  </div>
+                  <div class="b-m-i-c">
+                    <div class="bm22ic002">1BM22IC002</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="co-founders-parent">
+            <div class="co-founders">
+              <div class="icon-park-solidthree-key-wrapper">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48"><defs><mask id="ipSThreeKey0"><g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><rect width="36" height="36" x="6" y="6" fill="#fff" stroke="#fff" rx="3"/><path stroke="#000" d="M19 14h10l-7 9c4 0 7 2 7 6s-3 5-5 5c-2.381 0-4-1-5-2.1"/></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSThreeKey0)"/>
+                </svg>
+              </div>
+              <div class="rajdeep-bandyopadhaya-parent">
+                <div class="rajdeep-bandyopadhaya">RAJDEEP BANDYOPADHAYA</div>
+                <div class="bm22ic045-wrapper">
+                  <div class="bm22ic045">1BM22IC045</div>
+                </div>
+              </div>
+            </div>
+            <div class="co-founders1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48"><defs><mask id="ipSFourKey0"><g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><rect width="36" height="36" x="6" y="6" fill="#fff" stroke="#fff" rx="3"/><path stroke="#000" d="M26.977 34V14L18 26.997v2.023h12"/></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSFourKey0)"/>
+              </svg>
+
+              <div class="syed-amaan-parent">
+                <div class="syed-amaan">SYED MOHAMMAD AMAAN</div>
+                <div class="bm22ic060-wrapper">
+                  <div class="bm22ic060">1BM22IC060</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <style>
+        @keyframes fade-in {
+          from {
+            opacity: 0;
+            transform: translateY(-20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        /* Apply animation to the element */
+        .animated-element {
+          opacity: 0;
+          transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        
+        /* Trigger animation when element is in viewport */
+        .show {
+          opacity: 1;
+          transform: translateY(0);
+          animation: fade-in 1s ease-in-out forwards;
+        }
+        
+        /* Some styling for demonstration */
+        .spacer {
+          height: 1000px; /* Just for scrolling */
+        }
+      </style>
+      </head>
+      <body>
+      <div class="spacer"></div>
+      <div class="animated-element">Your content here</div>
+      <div class="spacer"></div>
+      
+      <script>
+      // JavaScript to add class when element comes into view
+      document.addEventListener("DOMContentLoaded", function() {
+        var animatedElement = document.querySelector('.animated-element');
+        window.addEventListener('scroll', function() {
+          if (isInViewport(animatedElement)) {
+            animatedElement.classList.add('show');
+          }
+        });
+        
+        function isInViewport(element) {
+          var rect = element.getBoundingClientRect();
+          return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+          );
+        }
+      });

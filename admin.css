@@ -1,0 +1,145 @@
+/* Reset */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #f1efef;
+    background: url('background.jpg') center/cover;
+    
+}
+
+/* Header */
+header {
+    background-color: #000022;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo h1 a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #1ca0f8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-container,
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo,
+    .navbar a {
+        margin-bottom: 10px;
+    }
+
+    .navbar a {
+        display: block;
+    }
+
+    .navbar a:hover {
+        background-color: #3498db;
+        color: #ecf0f1;
+    }
+
+    .navbar {
+        background-color: #2c3e50;
+    }
+}
+
+/* Why Us Section */
+.why-us {
+    backdrop-filter: blur(10px);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.icon-box-wrapper {
+    margin-top: 4rem;
+}
+
+.icon-box {
+    display: block;
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    opacity: 0.89;
+}
+
+.icon-box:hover {
+    transform: scale(1.1);
+    background-color: #c5c7c9;
+    opacity: 1;
+}
+
+.icon-box h4 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.icon-box p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Footer Styles */
+#footer {
+    background-color: #03001f;
+    color: #bcb6b6;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#footer p {
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}

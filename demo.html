@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='registration.css') }}">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="title">
+        Registration Form
+    </div>
+    <form class="form" method="POST">
+        <div class="inputfield">
+            {{ form.name.label }}
+            {{ form.name }}
+        </div>
+        <div class="inputfield">
+            {{ form.password.label }}
+            {{ form.password }}
+        </div>
+        <div class="inputfield">
+            {{ form.confirm_password.label }}
+            {{ form.confirm_password }}
+        </div>
+        <div class="inputfield">
+            {{ form.gender.label }}
+            {{ form.gender }}
+        </div>
+        <div class="inputfield">
+            {{ form.email.label }}
+            {{ form.email }}
+        </div>
+        <div class="inputfield">
+            {{ form.phone.label }}
+            {{ form.phone }}
+        </div>
+        <div class="inputfield">
+            {{ form.address.label }}
+            {{ form.address }}
+        </div>
+        <div class="inputfield terms">
+            {{ form.terms_agreed }}
+            {{ form.terms_agreed.label }}
+        </div>
+        <div class="inputfield">
+            {{ form.submit(class_='btn') }}
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

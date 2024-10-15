@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incident Reporting</title>
+</head>
+<body>
+
+<header>
+    <h1>Incident Reporting</h1>
+</header>
+
+<main>
+    <section id="accident-reporting">
+        <h2>Accident Reporting</h2>
+        <form action="submit_accident.php" method="POST">
+            <label for="accident-type">Type of Accident:</label>
+            <select id="accident-type" name="accident-type" required>
+                <option value="car">Car Accident</option>
+                <option value="Fire">Fire Accident</option>
+                <option value="robbery">Robbery</option>
+                <option value="fight">Neighbours Fights</option>
+
+                <option value="other">Other</option>
+            </select><br>
+
+            <label for="accident-description">Description:</label><br>
+            <textarea id="accident-description" name="accident-description" rows="4" cols="50" required></textarea><br>
+
+            <button type="submit">Report Accident</button>
+        </form>
+    </section>
+
+    
+</main>
+
+<footer>
+    <p>&copy; 2024 Incident Reporting</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+/* registration.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image:url("background.jpg");
+    backdrop-filter: blur(10px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .wrapper {
+    background:whitesmoke;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 400px;
+  }
+  
+  .title {
+    background-color: #120044;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .form {
+    padding: 20px;
+  }
+  
+  .inputfield {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .custom_select {
+    position: relative;
+  }
+  
+  select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    appearance: none;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .terms {
+    display: flex;
+    align-items: center;
+  }
+  
+  .check {
+    position: relative;
+    display: inline-block;
+    margin-right: 8px;
+  }
+  
+  .check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    position:absolute;
+    top: -3px;
+    left: 8px;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    border: 1px solid #0c0c0c;
+    border-radius: 4px;
+  }
+  
+  .check input:checked + .checkmark:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 7px;
+    height: 7px;
+    border: 2px solid #030045;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+  }
+  
+  .btn {
+    background-color: #10003b;
+    color: #fff;
+    padding: auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+  }
+  
+  .btn:hover {
+    background-color: #050017;
+  }
+  #p1{
+    margin-left: 1.5em;
+
+  }

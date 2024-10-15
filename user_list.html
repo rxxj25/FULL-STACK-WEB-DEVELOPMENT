@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User list</title>
+<style>
+  header {
+    background-color: #000109;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    color: #ffffff;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo h1 a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0; 
+    background-image: url('static/background.jpg');
+    background-size: cover;
+   
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* semi-transparent white background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* backdrop blur effect */
+  }
+  h1 {
+    text-align: center;
+  }
+  #complaints-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  .complaint-item:last-child {
+    margin-bottom: 0;
+  }
+  .complaint-text {
+    font-size: 16px;
+  }
+  #submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #080244;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #footer {
+    background-color: #030021;
+    color: #ffffff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#footer p {
+    margin: 0;
+}
+
+#containertext-center {
+    width: 80%;
+    margin: 0 auto;
+}
+
+</style>
+</head>
+<body>
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+      <div class="header-container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <h1 class="text-light">USER_LIST</a></h1>
+        </div>
+  </header>
+
+<div class="container">
+  <h1>User list</h1>
+  <ul id="complaints-list">
+    {% for user in users %}
+    <li class="complaint-item">
+        <h3>id: {{ user.id }}</h3>
+        <p>Name: {{ user.name }}</p>
+        <p>email: {{ user.email }}</p>
+        <p>Gender: {{ user.gender }}</p>
+        <p>Phone No: {{ user.phone_no }}</p>
+        <p>Address:{{ user.address}}</p>
+    </li>
+    {% endfor %}
+</ul>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const complaintsList = document.getElementById('complaints-list');
+    const submitBtn = document.getElementById('submit-btn');
+
+    submitBtn.addEventListener('click', function() {
+      addComplaint("A complaint by the user");
+    });
+
+    function addComplaint(text) {
+      const complaintItem = document.createElement('li');
+      complaintItem.classList.add('complaint-item');
+      complaintItem.innerHTML = `<p class="complaint-text">${text}</p>`;
+      complaintsList.appendChild(complaintItem);
+    }
+  });
+</script>
+<footer id="footer" class="bg-dark text-white py-4">
+  <div class="containertext-center">
+      <p>&copy; 2024 Admin Page. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

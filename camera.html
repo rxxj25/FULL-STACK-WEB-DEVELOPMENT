@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCTV Footage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url(background-blur.png);
+            color: aliceblue;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .cctv-feed {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .cctv-feed img {
+            width: 100%;
+            height: auto;
+        }
+
+        .cctv-feed h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">CCTV Footage</h1>
+
+    <div class="container">
+        <div class="cctv-feed">
+            <h2>PARK</h2>
+            
+            <img src="{{ url_for('static', filename='park.jpg') }}" alt="Example Image">
+        </div>
+
+        <div class="cctv-feed">
+            <h2>PARKING</h2>
+
+            <img src="{{ url_for('static', filename='parking.jpg') }}" alt="CCTV Footage of Location 2">
+        </div>
+
+        <div class="cctv-feed">
+            <h2>GARDEN CCTV-1</h2>
+            
+            <img src="{{ url_for('static', filename='garden1.jpg') }}" alt="CCTV Footage of Location 3">
+        </div>
+        <div class="cctv-feed">
+            <h2>GARDEN <CCTV-2></CCTV-2></h2>
+            
+            <img src="{{ url_for('static', filename='garden2.jpg') }}" alt=="CCTV Footage of Location 3">
+        </div>
+
+
+        <!-- Add more div.cctv-feed elements for additional locations -->
+    </div>
+</body>
+</html>
